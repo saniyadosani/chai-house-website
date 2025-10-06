@@ -85,6 +85,8 @@
             height: 200px;
             margin-bottom: 2rem;
             animation: fadeIn 1s ease-in;
+            mix-blend-mode: multiply;
+            filter: brightness(1.2) contrast(1.1);
         }
 
         .steam {
@@ -382,7 +384,7 @@
         <a href="#menu" class="cta-button">View Menu</a>
     </section>
 
-    <section id="about" class="section-alt">
+    <section id="about" class="section-alt" style="max-width: 100%; padding: 5rem 2rem;">
         <h2>About Us</h2>
         <div class="about-content">
             <p>The Chai House HTX is a handcrafted chai and coffee concept founded in Houston, bringing the warmth and authenticity of South Asian tea culture to the heart of Texas. We specialize in traditional favorites like Kashmiri Chai and Rose Chai, alongside innovative creations such as Pistachio Coffee, Ras Malai Matcha, and our signature Meetha sweets.</p>
@@ -391,7 +393,8 @@
         </div>
     </section>
 
-    <section id="menu">
+    <section id="menu" style="max-width: 100%; padding: 5rem 2rem;">
+        <div style="max-width: 1200px; margin: 0 auto;">
         <h2>Menu</h2>
         <div class="menu-container">
             <div class="menu-grid">
@@ -525,9 +528,10 @@
                 <p><strong>$2</strong> oat milk</p>
             </div>
         </div>
+        </div>
     </section>
 
-    <section id="events" class="section-alt">
+    <section id="events" class="section-alt" style="max-width: 100%; padding: 5rem 2rem;">
         <h2>Events & Pop-Ups</h2>
         <div class="events-content">
             <p><strong>Catch us at POST HTX and local Houston pop-up markets!</strong></p>
@@ -536,8 +540,9 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" style="max-width: 100%; padding: 5rem 2rem;">
         <h2>Contact Us</h2>
+        <div class="contact-form" style="max-width: 800px; margin: 0 auto;">
         <form class="contact-form" onsubmit="handleSubmit(event)">
             <div class="form-group">
                 <label for="name">Name</label>
@@ -553,9 +558,10 @@
             </div>
             <button type="submit" class="submit-btn">Send Message</button>
         </form>
-        <p style="text-align: center; margin-top: 2rem; font-style: italic;">
+        <p style="text-align: center; margin-top: 2rem; font-style: italic; color: var(--cream);">
             For business inquiries, please email us directly at <strong>thechaihousehtx@gmail.com</strong>
         </p>
+        </div>
     </section>
 
     <footer>
